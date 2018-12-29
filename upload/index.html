@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500,900|Merriweather:100,200,300,400,500,900|Roboto:100,200,300,400,500,900">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=yes' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="maplayers.js"></script>
+
+<!-- datasets -->
+    <script type="text/javascript" src="administration_data2.js"></script>
+    <script type="text/javascript" src="election_data.js"></script>
+		<script type="text/javascript" src="depose_data.js"></script>
+    <script type="text/javascript" src="maps_timeline_data.js"></script>
+    <script type="text/javascript" src="family_data1.js"></script>
+<!--css_files-->
+
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="administration_timeline.css">
+    <link rel="stylesheet" href="map_style.css">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="admin_map_css.css">
+    <link rel="stylesheet" href="family_css.css">
+
+
+  </head>
+  <style media="screen">
+.fixed_anchors
+{
+  position: fixed;
+  width:50px;
+  left:0;
+  top:0;
+}
+
+
+  </style>
+  <body id="body_i">
+
+    <div class="body_elements">
+
+
+<!--insignia-->
+
+<!--title-->
+
+
+
+
+<div class="firstpage" id="home">
+<div class="space5"></div>
+
+
+    <div class="firstimage wrapper131">
+      <div class=""></div>
+      <div ><a href="https://en.wikipedia.org/wiki/Kareng_Ghar" target="_blank"><img src="map_final.png"  alt="Kareng ghar(palace), Sivsagar, Assam" /></a>
+
+
+
+      </img>
+      </div>
+      <div class=""></div>
+    </div>
+<div class="space3">
+
+</div>
+    <div class="wrapper121 ">
+      <div class=""></div>
+          <div class=font_viz>DATA NARRATIVE STORY</div>
+      <div class=""></div>
+    </div>
+    <div class="font_title">
+    <span class="bold500">  600</span> years of Ahom Kingdom
+    </div>
+    <div class="wrapper121 ">
+      <div class=""></div>
+      <div class="title">
+        <div class="font_sub">by <span class="bold500">Supriya Dutta</span></div>
+
+      </div>
+      <div class=""></div>
+    </div>
+
+</div>
+
+
+
+
+
+<!--introduction-->
+<!-- <div class="space10"></div> -->
+<!-- <div class="space10title"></div>
+<div class="space10title"></div> -->
+<div class="space10"></div>
+
+<div class="wrapper1121" id="introduction">
+  <div class="">
+
+  </div>
+  <!-- <div class="">
+
+  </div> -->
+  <div class="font_subtext">
+<!-- <span class="bold500">Ahoms</span><br> -->
+<div class="space3"></div>
+<p class="">"600 years of Ahom Kingdom" is an interactive story narrative designed primarily to understand the Ahom Kingdom through data-visualizations. The primary topics explored here are the Kings, successors, kingdom and the administration system that shaped 600 glorious years.
+</p>
+  <!-- Ahoms had a successful reign of <span class='bold500'>600 years</span>, from <span class='bold500'>1228</span> to <span class='bold500'>1824</span>. Let's look into the family members of Sukapha and his successors who made the kingdom. -->
+  </div>
+  <div class=""></div>
+</div>
+
+<div class="wrapper1121" id="introduction">
+  <div class="">
+
+  </div>
+  <!-- <div class="">
+
+  </div> -->
+  <div class="font_body">
+<!-- <span class="bold500">Ahoms</span><br> -->
+<div class="space5"></div>
+<p class="">Ahoms were the descendants of <span class='bold500'>Shan</span> or <span class='bold500'>Tai race</span>, who came to the <span class='bold500'>Brahmaputra Valley of North East</span> during <span class='bold500'>13<sup>th</sup> </span>century. With glorious <span class='bold500'>600 years</span> they entail a very important part in the Assamese history. <br><br>
+  The first king, <span class='bold500'>Sukapha </span>came to Assam from <span class='bold500'>Mungmao</span>, currently in Yunan province of China. He left Mungmao with a group of nine hundred soldiers, fifteen elite members, two elephants and three hundred horses. On his way to the Brahmaputra valley of Assam, he conquered Khamjang area of Nagaland. He occupied  Namrup, Tipam, areas between Disang and Dikhow River and areas occupied by Moran and Borahi communities. He extended the state to the Namdang River in the west direction.
+  In <span class='bold500'>1253</span>, he established his capital at <span class='bold500'>Charaidau</span>, <span class='bold500'>Assam</span>. <br>
+</p>
+  <!-- Ahoms had a successful reign of <span class='bold500'>600 years</span>, from <span class='bold500'>1228</span> to <span class='bold500'>1824</span>. Let's look into the family members of Sukapha and his successors who made the kingdom. -->
+  </div>
+  <div class=""></div>
+</div>
+
+<div class="space5"></div>
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+
+  <div class="font_subtitles">
+
+FAMILY TREE OF AHOMS
+  </div>
+  <div class=""></div>
+</div>
+<div class="wrapper1121">
+  <div class="">
+
+  </div>
+  <!-- <div class="font_subtitles">
+Family tree of Ahoms
+  </div> -->
+  <div class="font_body">
+Ahoms had a successful reign of <span class='bold500'>600 years</span>, from <span class='bold500'>1228</span> to <span class='bold500'>1824</span>. Let's look into the family members of Sukapha and his successors who made the kingdom.
+<br>
+<br>
+
+<div class="Jumbo_fig2">
+  <div class="">
+    <div class="jumbofig">
+      39<br><div class="font_subtitles">
+      Kings
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="jumbofig">
+      600<br><div class="font_subtitles">
+        Years of Reign
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+  <div class=""></div>
+</div>
+
+
+<!--family tree-maps-->
+<div class="space5"></div>
+<!-- <div class="space10"></div> -->
+<div id="fam_viz">
+
+<!-- </div> -->
+<div id='map_fam' class="map_class relative">
+  <div id="family" class="absolute_fam"></div>
+  <div class="absolute_introFam" >
+    <div class="fam_lezend" id="fam_lezend"></div>
+    <p class="fam_intro_class"  id="fam_intro">The visualization shows the growth of the Ahom kingdom over the period of 600 years.<br>
+      <span class="font_clickmore" style=>CLICK ON THE FAMILY TREE STRUCTURE TO KNOW MORE</span>
+    </p>
+
+  </div>
+</div>
+<script type="text/javascript" src="map_script_fam.js"></script>
+
+<div id="family_timeperiod"></div>
+</div>
+
+
+
+
+<script type="text/javascript" src="family_script.js"></script>
+
+
+
+</div>
+<!--administration-->
+
+<div class="space5"></div>
+<!-- <div class="space5"></div> -->
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+  <!-- <div class="">
+
+  </div> -->
+  <div class="font_body">
+<!-- <div class="font_subtitles">
+AHOM ADMINISTRATION SYSTEM
+</div> -->
+<p>
+The kings in the Ahom dynasty were chosen generally through <span class='bold500'>primogeniture</span>. They could be elected by the <span class='bold500'>ministers</span> as well. When a successor was deemed unworthy by the administration system, they could elect another prince from a different family, but with the same royal blood-line. This rule was strictly followed; there were two periods where they could not find a suitable king, the administration system then decided to work without one, until a worthy ruler was found! Those periods were called <span class='bold500'>Interim periods</span>.
+
+</p>
+  </div>
+  <div class=""></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- administration introduction -->
+<div class="space5"></div>
+<!-- <div class="space5"></div> -->
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+
+  <div class="font_subtitles">
+
+EVOLUTION OF ADMINISTRATION SYSTEM IN 13TH CENTURY ASSAM
+  </div>
+  <div class=""></div>
+</div>
+
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+  <!-- <div class="font_subtitles">
+    <p>Evolution Of the Administration System <br>in the 13<sup>th</sup> Century Assam </p>
+
+  </div> -->
+  <div class="font_body">
+<!-- <div class="font_subtitles"> -->
+<p>With the expansion of the kingdom, Sukapha started his first administration system with two ministers. They were given the title <span class='bold500'>Buragohain</span> and <span class='bold500'>Borgohain</span>. With the acquisition of new territories the administration grew in size. It was divided into two parts, <span class='bold500'>Political</span> and <span class='bold500'>Civil</span>. By 1603, the administration comprised of over <span class='bold500'>162 members</span>, with <span class='bold500'>26 major officers</span> in the Political system. Let's look at how the administration system changed.</p>
+
+
+  </div>
+  <div class=""></div>
+</div>
+
+
+<!-- administration timeline viz -->
+<div class="space5"></div>
+<div class="space3"></div>
+<div id="adm_sys_timeline">
+
+
+<div class="wrapper">
+
+    <div class="map_class relative" id="map_adm">
+      <script type="text/javascript" src="map_script.js"></script>
+      <div id="viz_administration_timeline" class="viz_administration_timeline_class absolute_adm">
+
+        </div>
+    </div>
+<div id="timeperiod" class="admin_timeline_timeperiod"></div>
+</div>
+<script type="text/javascript" src="administration_timeline.js"></script>
+<script type="text/javascript" src="admin_map_script.js"></script>
+
+
+  </div>
+
+
+
+    <div class="space3"></div>
+    <div class="wrapper1121" id="admin">
+      <div class=""></div>
+
+      <div class="font_body">
+
+    Most of the expansion happened during <span class='bold500'>Suhungmung's</span> reign. During his reign <span class='bold500'>four officers</span> were appointed. For better management of the kingdom Ahoms had a rule of dividing the kingdom into several territories, which were then allotted to different officers. Officers in the political division, along with their responsibilities were also allotted a piece of land to rule.
+
+      </div>
+      <div class=""></div>
+    </div>
+
+
+
+<!-- administartion_description -->
+<div class="space5"></div>
+<!-- <div class="space5"></div> -->
+<div class="space3"></div>
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+
+  <div class="font_subtitles">
+
+WHO WERE IN THE ADMINISTRATION SYSTEM?
+  </div>
+  <div class=""></div>
+</div>
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+
+  <div class="font_body">
+  <p>By <span class='bold500'>17th century</span>, the administration system of Ahoms was fully developed. There were around 162 officers in the administration system, with the political part consisting of 26 officers. Each of them were given different powers and responsibilities. Let's look into it in details.</p>
+  </div>
+  <div class=""></div>
+</div>
+
+<!-- administartionviz -->
+
+<div class="space5"></div>
+<div class="space3"></div>
+<div id="adm_sys">
+
+
+<div class="wrapper4">
+  <div class=""></div>
+
+  <div id="viz_administration" class="viz_administration_class">
+  </div>
+<div id="administration_officers_info" class="font_body admin_info">
+Political part of the administration system had <span class="bold500">26 officials</span>, each with different powers and responsibilities. Here they are arranged according to the political hierarchy followed in the Ahom system.
+<br><br><br>  <span class="font_clickmore2" >CLICK ON THE FAMILY TREE STRUCTURE TO KNOW MORE</span>
+
+
+</div>
+
+<div class=""></div>
+</div>
+
+<script type="text/javascript" src="administration_script.js"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- election into?? -->
+<div class="space5"></div>
+<div class="space5"></div>
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+
+  <div class="font_subtitles">
+
+CAN YOU BE A PART OF THE ADMINISTRATION SYSTEM?
+  </div>
+  <div class=""></div>
+</div>
+<!-- <div class="space5"></div> -->
+<div class="wrapper1121" id="fam_election">
+  <div class=""></div>
+
+  <div class="font_body">
+<p>Officers in the administration system had to belong to certain groups to get elected. The most desirable person of the group was chosen for the positions in the administration system. </p>
+
+
+
+  </div>
+  <div class=""></div>
+</div>
+
+
+<!--election-->
+
+<div class="space5"></div>
+<div class="space3"></div>
+<div class='scrolly'>
+
+<!-- sticky graphic -->
+<figure class='sticky' id="sticky_id">
+  <!-- chart stuff in here -->
+  <div id="viz_election" class="viz_election_class">	</div>
+  <script type="text/javascript" src="election_script1.js"></script>
+</figure>
+
+<!-- step text -->
+<article>
+
+  <div class='step steps_font' data-index='0'>
+    <p>The visualization shows the Officials and the families that they belonged to. The most eligible member of those families were chosen for these positions. </p>
+
+  </div>
+  <div class='step steps_font step3' data-index='1'>
+
+    <p>When placed in the matrix, it was evident that most <span class='bold500'>higher rank</span> officers were from the <span class='bold500'>Ahom community</span>.</p>
+  </div>
+  <div class='step steps_font step4' data-index='2'>
+    <!-- xdfcgvhbjnkml,; -->
+    <p>Only in the later part of their reign when the administration system evolved, they started incorporating people from different community. But as seen here, most of these people were elected only to the <span class='bold500'>lower </span>positions.</p>
+  </div>
+  <!-- <div class='step' data-index='3'> -->
+    <!-- xdfcgvhbjnkml, -->
+    <!-- <p></p> -->
+  <!-- </div> -->
+  <!-- ...more steps -->
+</article>
+
+</div>
+
+<script src='enterview.js'></script>
+<script>
+enterView({
+selector: ('.step'),
+offset: 0.6,
+enter: el => {
+  const index = +d3.select(el).attr('data-index');
+  updateChart(index);
+},
+exit: el => {
+  let index = +d3.select(el).attr('data-index');
+  index = Math.max(0, index - 1);
+  updateChart(index);
+}
+});
+
+function make_shit_(){
+svg_election
+        .append("g")
+        .append("rect")
+        .attr("id","rect_election_shadow")
+        .attr("x",election_xScale(fam[1]))
+        .attr("y",election_yScale(positions[0]))
+        .attr("width",(election_xScale(fam[1])-election_xScale(fam[0]))*12+25)
+        .attr("height",election_yScale(positions[positions.length-1])+election_yScale(positions[1])-election_yScale(positions[0]))
+        .attr("fill","black")
+        // .attr("stroke","#768c27")
+        // .attr("stroke-width",5)
+        .attr("transform","translate("+election_padding/1.5+","+election_padding/2+")")
+        // .transition()
+        .attr("opacity",0);
+
+svg_election
+        .append("g")
+        .append("rect")
+        .attr("id","rect_election_marker")
+        .attr("x",election_xScale(fam[0]))
+        .attr("y",election_yScale(positions[0]))
+        .attr("width",election_xScale(fam[1])-election_xScale(fam[0]))
+        .attr("height",election_yScale(positions[positions.length-1])+election_yScale(positions[1])-election_yScale(positions[0]))
+        .attr("fill","none")
+        .attr("stroke",green_col_election)
+        .attr("stroke-width",5)
+        .attr("opacity",0)
+        .attr("transform","translate("+election_padding/1.5+","+election_padding/2+")");
+}
+
+function updateChart(index)
+{
+if(index==0)
+{
+  if(d3.selectAll("#rect_election_marker"))
+  d3.select("#rect_election_marker")
+  .transition()
+  .attr("opacity",0)
+  .transition()
+  .remove();
+  if(d3.selectAll("#rect_election_shadow"))
+  d3.selectAll("#rect_election_shadow")
+  .transition()
+  .attr("opacity",0)
+  .transition()
+  .remove();
+}
+if(index==1)
+{
+  make_shit_();
+
+  d3.selectAll("#rect_election_shadow")
+  .transition()
+  .attr("opacity",0.3);
+
+  d3.select("#rect_election_marker")
+  .transition()
+  .attr("opacity",1);
+
+
+}
+}
+</script>
+<!--family interim-->
+
+
+<!-- depose into?? -->
+<!-- <div class="space10"></div> -->
+<div class="wrapper1121" id="admin">
+  <div class=""></div>
+
+  <div class="font_subtitles">
+
+DID YOU NOTICE TWO INTERIM PERIODS IN THE FAMILY TREE?
+  </div>
+  <div class=""></div>
+</div>
+<div class="wrapper1121" id="fam_election">
+  <div class=""></div>
+
+  <div class="font_body">
+<p>It was another system very unique to Ahom at that time. There were five officers, namely: <span class='bold500'>Borgohain</span>, <span class='bold500'>Buragohain</span>, <span class='bold500'>Barpatragohain</span>, <span class='bold500'>Barbarua</span>, and <span class='bold500'>Barphukan</span>, who could directly engage themselves with the election of the Kings. Kings were primarily elected through <span class='bold500'>primogeniture</span>, but could also be <span class='bold500'>elected</span> and <span class='bold500'>depose</span> by these <span class='bold500'>five ministers</span>. Let's have a look. </p>
+
+  </div>
+  <div class=""></div>
+</div>
+
+
+
+
+
+
+
+<!--depose,election-->
+<div class="space10">
+</div>
+<div class='scrolly'>
+
+<!-- sticky graphic -->
+<figure class='sticky' id="sticky_id">
+	<!-- chart stuff in here -->
+	<div class="viz_depose" id="viz_depose"></div>
+	<div id="depose_legend"></div>
+	<script type="text/javascript" src="depose_script.js"></script>
+</figure>
+
+<!-- step text -->
+<article>
+	<div class='step2 steps_font' data-index='0'>
+		<p>In this later part of the time-period<span class='bold500'>(1641-1824)</span>, we can see that, most kings were elected through ministers and deposed as well.</p>
+
+	</div>
+	<div class='step2 steps_font' data-index='1'>
+		<p>Around the time-period <span class='bold500'>1670-1680</span>, two of the Kings only had on <span class='bold500'>1 month</span> and <span class='bold500'>20 days</span> as their duration of reign.</p>
+
+	</div>
+	<div class='step2 steps_font step3' data-index='2'>
+		<p>Ministers in the later part of the time-period started to exploit their powers repeatedly.
+ </p>
+
+	</div>
+	<div class='step2 steps_font step4' data-index='3'>
+<p>After King <span class='bold500'>Sunyetpha</span>, the kingdom started to grow weak internally and was subjected to numerous attacks from different groups.</p>
+	</div><!--hide this div !!important-->
+	<!-- ...more steps -->
+</article>
+
+</div>
+
+<script type="text/javascript">
+enterView({
+	selector: ('.step2'),
+	offset: 0.6,
+	enter: el => {
+		const index = +d3.select(el).attr('data-index');
+		// updateChart(index);
+		switch(index)
+		{
+			case 0:
+      console.log(index);
+			update();
+			break;
+			case 1:
+      console.log(index);
+			update2();
+			break;
+			case 2:
+      console.log(index);
+			update3();
+			break;
+		}
+	},
+	exit: el => {
+		let index = +d3.select(el).attr('data-index');
+		index = Math.max(0, index);
+		// updateChart(index);
+		switch(index)
+		{
+			case 0:
+      // console.log(index);
+			update_original();
+			break;
+			case 1:
+      // console.log(index);
+			update();
+			break;
+			case 2:
+      // console.log(index);
+			update2();
+			break;
+
+		}
+	}
+});
+</script>
+</div><!--body element-->
+    <!-- </div> -->
+
+    <!-- <div class="space10"></div> -->
+    <!-- <div class="wrapper3" id="fam_election">
+      <div class=""></div>
+      <div class="font_body"> -->
+    <!-- <span class="bold500">Interim period?</span><br> -->
+
+  <!-- During the later part of history, they started exercising their powers more often which might have been one of the causes of their kingdom growing internally weak. -->
+
+      <!-- </div>
+      <div class=""></div>
+    </div>
+<div class="space10"></div>
+<div class="space10"></div>
+<div class="space10"></div>
+<div class="space10"></div> -->
+<!-- <div class="space5"></div> -->
+<!-- <div class="space5"></div> -->
+<!-- <div class="space5"></div> -->
+<div class="wrapper121 font_body end">
+  <div class=""></div>
+
+  <div class="">
+    On <span class='bold500'>24 February</span>, <span class='bold500'>1826</span>, Assam was handed over to the British through an <span class='bold500'>Yandabu Agreement</span>, signed at <span class='bold500'>Yandabu</span>, near Burmese capital Ava. <br><br>
+
+The power given to the ministers to elect or depose kings was designed to better administer the kingdom. However, what started of as a noble power proved to be very fatal in the later part of Ahom's history. This created instability in the administration system and could have been one of the possible reasons of their fall.<br><br>
+
+Modern Ahom people and culture are an amalgamation of Assamese and Tai culture. The name Ahom was given to the Tai community that came to Brahmaputra valley of Assam, and  currently represents the largest Tai community in India, with a population of nearly <span class='bold500'>4 million</span> in Assam and <span class='bold500'>50,000</span> in Arunachal Pradesh.
+  </div>
+  <div class=""></div>
+</div>
+
+<div class="wrapper121 end_col">
+  <div class=""></div>
+
+  <div class="">
+
+<div class="wrapper111">
+  <div class="">
+    <span class="title_colophon">Design and development:</span><br> Supriya Dutta<br><br>
+<span class="title_colophon">Project Guide:</span><br> <a class="links" href="https://twitter.com/venkatrajam">Venkatesh Rajamanickam</a>, <a class="links" href="http://info-design-lab.github.io/">Information Design Lab, IDC</a>
+  </div>
+  <div class="">
+    <span class="title_colophon">Data Sources:</span><br>
+     <span class="bookname"><em class='italics'>Itihase Suwara Sohota Bosor</em></span>, Sarbananda Rajkuwar, Edition-3, M/s Banalata, November 2017 <br><br>
+<span class="bookname">A history of Assam</span>, Edward Gait, Bani Mandir, Edition-3 <br><br>
+<span class="bookname"><em class='italics'>Ahomor Din</em></span>, Hiteshwar Baruah <br><br>
+  </div>
+  <div class="">
+    <span class="title_colophon">More Information:</span><br>
+    <span class="bookname">Raw data</span> can be downloaded <a class="links" href="https://github.com/supriyaDutta/ahom_data/blob/master/data_res.ods">here</a>.<br><br>
+<span class="bookname">Project report</span> can be downloaded <a class="links" href="https://github.com/supriyaDutta/ahom_data/blob/master/ahom_kingdom.pdf">here</a>..updated version yet to be uploaded!<br><br>
+  </div>
+</div>
+<div class="">
+  <p>Special Thanks to Dr. Dandeswar Dutta for his help with the data collection and <a  class="links" href="http://www.kiranprasanth.in/">Kiran Prasanth Rajan</a> who created the introductory image. I would also like to thank my batch-mates of Interaction Design(2017-2019) for their invaluable suggestions and feedback throughout the course of the project.</p>
+</div>
+  </div>
+  <div class=""></div>
+</div>
+
+
+<p class="font_subtitles" >.FIN</p>
+  </body>
+</html>

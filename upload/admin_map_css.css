@@ -1,0 +1,34 @@
+.wrapper12
+{
+   display:grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+      /* background:red; */
+
+}
+
+#timeperiod{
+  width: 100%;
+  /*max-width: 800px;*/
+  height:10vh;
+  /* background: black; */
+}
+.wrapper
+{
+  position: relative;
+}
+.relative
+{
+  position: relative;
+
+
+}
+.absolute_adm
+{
+  position: absolute;
+  left:0;
+    /* width:40%; */
+    z-index:999;
+
+}
