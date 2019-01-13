@@ -6,10 +6,10 @@ container: 'map_fam',
 style: 'mapbox://styles/supriyadutta/cjpv70syn006m2rofxbvjxfep',
 // boxZoom:true,
 scrollZoom:false,
-center: [91.551411, 25.599464],
-zoom: 6,
-maxZoom:7,
-minZoom:5.6,
+center: [92.551411, 26.599464],
+zoom: 6.5,
+maxZoom:8,
+minZoom:3.6,
 });
 map_fam.addControl(new mapboxgl.NavigationControl());
 

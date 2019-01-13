@@ -142,6 +142,12 @@ var map_timeline_ad=[
   {
     "map_number": 10,
     "timeline1": 1696,
+    "timeline2": 1751,
+    "maps": "Sukhrangpha_RudraSingh10"
+  },
+  {
+    "map_number": 10,
+    "timeline1": 1751,
     "timeline2": 1806,
     "maps": "Sukhrangpha_RudraSingh10"
   },

@@ -1,5 +1,7 @@
 var width=document.getElementById("viz_administration_timeline").clientWidth;
 var height=document.getElementById("viz_administration_timeline").clientHeight;
+// var width_officers=document.getElementById("administration_officers_info_individual").clientWidth;
+// var height_officers=document.getElementById("administration_officers_info_individual").clientHeight;
 console.log(height);
 console.log(width);
 var adm_timeline_padding_x=width/10;
@@ -15,19 +17,23 @@ var svg_administration_timeline=d3.select("#viz_administration_timeline")
           .attr("height","100%")
           .attr("preserveAspectRatio","xMidYMid")
           .attr("viewBox", "0 0 " + width + " " + height);
-//slider
-// var svg_slider=d3.selectAll("#slider_div")
-//         .append("svg")
-//         .attr("width","100%")
-//         .attr("height","100%")
-//         .attr("preserveAspectRatio","xMidYMid")
-//         .attr("viewBox", "0 0 " + width-adm_timeline_padding_x + " " + 50);
-// var xSlider = d3.scaleLinear()
-//     .domain([1228, 1826])
-//     .range([0, width-adm_timeline_padding_x/5])
-//     .clamp(true);
 
-
+// var svg_administration_officers=d3.select("#administration_officers_info_individual")
+//           .append("svg")
+//           .attr("width","100%")
+//           .attr("height","100%")
+//           .attr("preserveAspectRatio","xMidYMid")
+//           .attr("viewBox", "0 0 " + width_officers + " " + height_officers);
+//
+// svg_administration_officers.append("g") //last addition, officers info_rect
+//           .append("rect")
+//           .attr("x",0)
+//           .attr("y",0)
+//           .attr("height", height_officers)
+//           .attr("width", 0)
+//           .attr("id","officers_info")
+//           // .attr("opacity",0)
+//           ;
 
 var adm_timeline_xScale=d3.scaleLinear()
           .domain([0,8])
@@ -52,7 +58,7 @@ console.log(admin_dataset[0].levels);
 //console.log(levels);
 //nsole.log(levels_index);
 var adm_back=svg_administration_timeline.selectAll("#viz_administration_timeline")
-            .data(admin_dataset[1].levels)
+            .data(admin_dataset[2].levels)
             .enter()
             .append("g")
             .append("rect")
@@ -72,7 +78,7 @@ var adm_back=svg_administration_timeline.selectAll("#viz_administration_timeline
             .attr("transform","translate("+adm_timeline_padding_x/2+","+adm_timeline_padding_y+")");
 
 
-
+// var administration_officers_info_individual=
 
 
 
@@ -82,11 +88,12 @@ console.log(admin_dataset);
 var strlenMultiplier=10;
 
 var adm_system=svg_administration_timeline.selectAll("#viz_administration_timeline")
-              .data(admin_dataset[1].people)
+              .data(admin_dataset[2].people)
               .enter()
               .append("g")
               .append("circle")
               .attr("id","officials")
+              .attr("cursor","pointer")
               .attr("cx",function(d){
               //  console.log(d.x);
 
@@ -167,7 +174,20 @@ var adm_system=svg_administration_timeline.selectAll("#viz_administration_timeli
               {
                 svg_administration_timeline.selectAll("#admin_text_hover").remove();
                 svg_administration_timeline.selectAll("#admin_hover_rect").remove();
-              });
+              })
+              .on("click", function(d)
+            {
+              // svg_administration_officers.select("#officers_info")
+              //   .text(""+d.officials+"");
+              // document.getElementById("invisible_text").style.display="block";
+
+              //.innerHTML=;
+              document.getElementById("text_officers").innerHTML=d.description;
+              openNav();
+
+
+              // console.log(d.officials);
+            });
 
 
 
@@ -285,20 +305,23 @@ console.log(year);
 var levels_index;
 switch(year)
 {
-  case 1603:
+  case 1751:
   levels_index=0;
   break;
-  case 1228:
+  case 1603:
   levels_index=1;
   break;
-  case 1332:
+  case 1228:
   levels_index=2;
   break;
-  case 1497:
+  case 1332:
   levels_index=3;
   break;
-  case 1552:
+  case 1497:
   levels_index=4;
+  break;
+  case 1552:
+  levels_index=5;
   break;
 }
 
@@ -349,7 +372,8 @@ return adm_timeline_yScale(d.levels);
   {
     if(year<=1828)
     {
-
+      if(year<1751)
+      {
           if(year<1603)
           {
             if(year<1552)
@@ -367,6 +391,20 @@ return adm_timeline_yScale(d.levels);
             return 1552;
           }
         return 1603;
-
+      }
+      return 1751;
     }
+  }
+
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "30%";
+    // document.getElementById("mySidenav").style.borderLeft = "3px solid #6b883c";
+    // document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("mySidenav").style.borderLeft = "0px";
+    // document.getElementById("main").style.marginLeft= "0";
   }
